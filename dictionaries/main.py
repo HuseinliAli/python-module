@@ -2,8 +2,8 @@ cars_dic = {
     "99-EE-999":{"model":"Mustang","brand":"Ford","year":1964},
     "99-EE-998":{"model":"Mustang","brand":"Ford","year":1965}
 }
-
-print(cars_dic["99-EE-998"])
+cars_dic.pop("99-EE-998")
+print(cars_dic)
 
 for i in cars_dic.keys():
     if('99-EE-999'==i):
@@ -22,12 +22,12 @@ users_dict = {
     3:{"first_name":"Elmir","last_name":"Mikayilli","password":"elmirmikayil1234"},
 }
 
-id = int(input("enter user id: "))
+user_id = int(input("enter user id: "))
 
-if(id in users_dict.keys()):
-    print(f"{users_dict[id]['first_name']} {users_dict[id]['last_name']}")
+if(user_id in users_dict.keys()):
+    print(f"{users_dict[user_id]['first_name']} {users_dict[user_id]['last_name']}")
 else:
-    print(f"{id} nomreli istifadeci sistemde tapilmadi")
+    print(f"{user_id} nomreli istifadeci sistemde tapilmadi")
 
 for i in users_dict:
     print(i)
@@ -42,4 +42,5 @@ for i, j in users_dict.items():
     print(f"{i}. {j['first_name']} {j['last_name']}")
 
 new_users_dict = dict(users_dict)
+
 print(new_users_dict)
