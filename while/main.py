@@ -11,3 +11,4 @@ while temp > 0:
 
 string += f" = {result}" 
 print(string)
+
