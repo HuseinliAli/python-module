@@ -34,7 +34,6 @@ def avg_task(nums):
 def upper_task(parameter):
     return parameter.upper()
 
-
 def min_and_max(nums):
     min = sys.maxsize
     max = sys.maxsize * (-1) -1
