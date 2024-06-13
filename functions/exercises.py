@@ -8,6 +8,8 @@ def check_number_is_prime(number:int) -> bool:
     return True
 
 def multipy_numbers(*numbers) -> int:
+    if len(numbers) == 0:
+        return 0
     result = 1
     for number in numbers:
         result *= number
